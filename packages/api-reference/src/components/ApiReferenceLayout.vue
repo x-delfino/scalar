@@ -32,7 +32,7 @@ import { useNavState, useSidebar } from '../hooks'
 import { useToasts } from '../hooks/useToasts'
 import type {
   ReferenceLayoutProps,
-  ReferenceLayoutSlot,
+  ReferenceLayoutSlots,
   ReferenceSlotProps,
 } from '../types'
 import { default as ApiClientModal } from './ApiClientModal.vue'
@@ -61,9 +61,7 @@ initializeToasts((message) => {
   toast(message)
 })
 
-defineSlots<{
-  [x in ReferenceLayoutSlot]: (props: ReferenceSlotProps) => any
-}>()
+defineSlots<ReferenceLayoutSlots>()
 
 const isLargeScreen = useMediaQuery('(min-width: 1150px)')
 
