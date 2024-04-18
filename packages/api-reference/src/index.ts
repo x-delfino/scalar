@@ -6,9 +6,9 @@ export { default as RenderedReference } from './components/Content/Content.vue'
 export { default as SearchModal } from './components/SearchModal.vue'
 export { default as SearchButton } from './components/SearchButton.vue'
 export { default as GettingStarted } from './components/GettingStarted.vue'
-
 export { useReactiveSpec } from './hooks/useReactiveSpec'
 
+export * from './components/Layouts'
 export * from './components/DarkModeToggle'
 export * from './components/Sidebar'
 export * from './components/Card'
@@ -16,5 +16,6 @@ export * from './components/Card'
 export * from './stores'
 export * from './helpers'
 export * from './types'
+export * from './hooks'
 
 export { useApiClientStore } from '@scalar/api-client'
