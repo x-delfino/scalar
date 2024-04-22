@@ -933,6 +933,22 @@ importers:
         version: 1.8.27(typescript@5.4.3)
 
   packages/api-reference-editor:
+    dependencies:
+      '@scalar/api-client':
+        specifier: workspace:*
+        version: link:../api-client
+      '@scalar/api-reference':
+        specifier: workspace:*
+        version: link:../api-reference
+      '@scalar/oas-utils':
+        specifier: workspace:*
+        version: link:../oas-utils
+      '@scalar/use-codemirror':
+        specifier: workspace:*
+        version: link:../use-codemirror
+      unhead:
+        specifier: ^1.8.3
+        version: 1.9.5
     devDependencies:
       '@scalar/build-tooling':
         specifier: workspace:*
@@ -950,8 +966,11 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(vue@3.4.21)
       vue:
-        specifier: ^3.3.0
+        specifier: ^3.4.21
         version: 3.4.21(typescript@5.4.3)
+      vue-tsc:
+        specifier: ^1.8.19
+        version: 1.8.27(typescript@5.4.3)
 
   packages/api-reference-react:
     dependencies:
@@ -11480,7 +11499,6 @@ packages:
     dependencies:
       '@unhead/schema': 1.9.5
       '@unhead/shared': 1.9.5
-    dev: true
 
   /@unhead/schema@1.8.10:
     resolution: {integrity: sha512-cy8RGOPkwOVY5EmRoCgGV8AqLjy/226xBVTY54kBct02Om3hBdpB9FZa9frM910pPUXMI8PNmFgABO23O7IdJA==}
@@ -11503,7 +11521,6 @@ packages:
     resolution: {integrity: sha512-WN2T8th1wYn4A1bb6o8Z59wNVMPkD6YdNQIlmSbEP9zuSYyVEh3BIxqSdxWM/xl8atN8fNwVW06knaF51VmKXA==}
     dependencies:
       '@unhead/schema': 1.9.5
-    dev: true
 
   /@unhead/ssr@1.9.5:
     resolution: {integrity: sha512-l9fqAKM3odX/8Ac8l7v7Nlot5f+e6ktINT/PjBuXf+pHHmPz7+eKWzNL95KVB/o0uxmJr2BVijDwCPYrgmjfjQ==}
@@ -12166,7 +12183,7 @@ packages:
       '@vue/compiler-dom': 3.4.21
       '@vue/shared': 3.4.21
       computeds: 0.0.1
-      minimatch: 9.0.3
+      minimatch: 9.0.4
       muggle-string: 0.3.1
       path-browserify: 1.0.1
       typescript: 5.4.3
@@ -27008,7 +27025,6 @@ packages:
       '@unhead/schema': 1.9.5
       '@unhead/shared': 1.9.5
       hookable: 5.5.3
-    dev: true
 
   /unicode-canonical-property-names-ecmascript@2.0.0:
     resolution: {integrity: sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ==}
