@@ -21,5 +21,5 @@
     "verbatimModuleSyntax": true
   },
   "exclude": ["node_modules"],
-  "include": ["src"]
+  "include": ["src", "vitest.config.ts", "tailwind.config.ts", "env.d.ts"]
 }

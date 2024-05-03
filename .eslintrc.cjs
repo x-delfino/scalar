@@ -71,6 +71,7 @@ module.exports = {
         'no-shadow': 'off',
         '@typescript-eslint/no-shadow': ['error'],
         'no-unused-vars': 'off',
+        '@typescript-eslint/no-import-type-side-effects': 'warn',
         '@typescript-eslint/no-unused-vars': [
           'warn',
           { ignoreRestSiblings: true },
